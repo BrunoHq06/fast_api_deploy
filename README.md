@@ -22,33 +22,6 @@ cd nome-do-repositorio
 
 ### 2. Construir e rodar o container Docker
 
-#### 2.1 Construir e rodar o container Docker a partir do .tar
-
-Caso você queira utlizar a instação a partir da imagem **.tar**, basta ter os arquivos **xpinc.tar**, **Dockerfile** e **docker-compose.yaml** 
-
-Dessa maneira, com esses arquivos baixados, rode os comandos
-
-```bash
-docker load -i xpinc.tar
-```
-
-Isso ira importar a imagem para seu docker local.
-
-Para checar se a imagem está corretamente instalada, você pode usar:
-
-```bash
- docker images
-```
-e lá encontrar a imagem xpinc.
-
-Uma vez instalado, basta rodar:
-
-```bash
- docker-compose up
-```
-
-#### 2.2 Construir e rodar o container Docker usando todos os aquivos
-
 Use o Docker Compose para construir e rodar a aplicação. Este comando irá construir a imagem do Docker a partir do `Dockerfile`, instalar as dependências e iniciar a API:
 
 ```bash
