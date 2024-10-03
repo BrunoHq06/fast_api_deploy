@@ -16,8 +16,8 @@ Clone o repositório do projeto para sua máquina local:
 Nesse repositório, temos todos os arquivos utilizados para construção da imagem, caso queira ter acesso a todos estes para que posso analizá-lo mais profundamente, fique à vontade para clonar o repositório inteiro
 
 ```bash
-git clone https://github.com/usuario/nome-do-repositorio.git
-cd nome-do-repositorio
+git clone https://github.com/BrunoHq06/fast_api_deploy.git
+cd fast_api_deploy
 ```
 
 ### 2. Construir e rodar o container Docker
