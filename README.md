@@ -92,6 +92,5 @@ As principais dependências do projeto estão listadas no arquivo `requirements.
 ├── api.py                  # Arquivo principal da API FastAPI
 ├── docker-compose.yaml     # Arquivo de configuração do Docker Compose
 ├── Dockerfile              # Dockerfile para criação da imagem
-├── xpinc.tar               # Imagem criada
 └── requirements.txt        # Dependências do projeto
 ```
