@@ -12,13 +12,25 @@ app = FastAPI()
 with open("./artifacts/stroke_rf.onnx", "rb") as f:
     onnx_model = onnx.load(f)
 
+# Definindo tipos de dados para a coluna smoking_status
+class SmokingStatus(str, Enum):
+    never_smoked = "never smoked"
+    formerly_smoked = "formerly smoked"
+    smokes = "smokes"
+    unknown = "Unknown"
+
+# Definindo tipos de dados para a coluna residence_type
+class ResidenceType(str, Enum):
+    rural = "Rural"
+    urban = "Urban"
+
 # Definindo a classe que representa o corpo da requisição para a rota /predict
 class PredictRequest(BaseModel):
     age: float
     avg_glucose_level: float
     bmi: float
-    smoking_status: str
-    Residence_type: str
+    smoking_status: SmokingStatus
+    Residence_type: ResidenceType
 
 
 def transform_input(input_data: dict):
