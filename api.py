@@ -4,6 +4,7 @@ import uvicorn
 import onnx
 import onnxruntime as rt
 import numpy as np
+from enum import Enum
 
 # Criação da app FastAPI
 app = FastAPI()
